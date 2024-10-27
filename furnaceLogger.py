@@ -91,7 +91,7 @@ class openweather(object):
 
 
 def main():
-	weatherapi = openweather(47.7127, -122.3339, "<api_key>")
+	weatherapi = openweather(<lat>, <lon>, "<api_key>")
 	input_pin = "P8_10"
 	lastEvent = thermostatEvent(-1, weatherapi.get())
 
