@@ -1,6 +1,8 @@
 # thermostatIO
 Program to intercept and log thermostat commands to a US residential HVAC system. Specifically to prove that my 30yo furnace was oversized and should be downsized when replaced.
 
+Note, you'll need an openweather api_key https://home.openweathermap.org/api_keys and know your gps coordinates to get the outdoor temp data for your area.
+
 The code was specifically written for the BBB, but uses only digitalIO pins and should be simple to rewrite for any computer with GPIO like the Rpi.
 
 I ran this on my furnace over the coldest week of the year and found the furnace to have less than a 50% duty cycle and very short average runtimes.
@@ -12,7 +14,7 @@ While running the experiment, I leanred that the furnace had been misconfigured 
 
 
 I was also able to present this data to the HVAC contractors bidding on my replacement as proof that we can safely downsize to improve efficiency and comfort.
-
+```
 Total Time	3917.32
 Total On	1779.93
 Total Off	2137.38
@@ -27,3 +29,4 @@ Median Off	11.33
 Average Duty Cycle	0.483871320946465
 Median Duty Cycle	0.480076775723397
 Avg Temp Delta	43.6243493150685
+```
